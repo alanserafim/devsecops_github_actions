@@ -43,5 +43,5 @@ jobs:
     - name: Projeto compilado
       uses: actions/upload-artifact@v4
       with:
-        name: projeto_compilado
-        path: main
+        name: meu-app-${{ matrix.os }}-go${{ matrix.go_version }}
+        path: meu-app-${{ matrix.os }}-go${{ matrix.go_version }}
